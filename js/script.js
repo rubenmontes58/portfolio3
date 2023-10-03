@@ -113,20 +113,12 @@ const swiper2 = new Swiper('.partnerCarousel', {
 /*================================================================= 
     Map
 ==================================================================*/
-var map = L.map('mapwrapper').setView([-37.817160, 144.955937], 12);
-
-L.tileLayer('../../../../%7bs%7d.tile.openstreetmap.org/%7bz%7d/%7bx%7d/%7by%7d.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+var map = ('mapwrapper')
 
 
-var greenIcon = L.icon({
-    iconUrl: "image/location.png",
 
-    iconSize:     [48, 48], // size of the icon
-});
 
-L.marker([-37.817160, 144.955937], {icon: greenIcon}).addTo(map);
+
 
 
 
